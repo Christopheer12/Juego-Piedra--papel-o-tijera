@@ -10,7 +10,7 @@ function eleccion(jugada) {
     } else if (jugada === 3) {
         resultado = "Tijera ✂";
     } else {
-        resultado = "Opcion no valida, Recuerda que las opciones son: 1 piedra, 2 es papel, 3 es piedra";
+        resultado = "Opcion no valida, Recuerda que las opciones son: 1 piedra 🥌, 2 es papel🧻 , 3 es Tijera ✂";
     }
     return resultado;
 }
@@ -51,7 +51,7 @@ while (triunfo < 3 && derrota < 3) {
     let pc = aleatorio(1, 3);
     let jugador = 0;
     jugador = parseInt(
-        prompt("Elige: 1 para piedra, 2 para papel, 3 para piedra")
+        prompt("Elige: 1 para piedra 🥌, 2 para papel 🧻, 3 para tijera ✂")
     );
     alert(`Tu eleccion ${nombreDelJugador} es: ` + eleccion(jugador));
     alert("La eleccion de la PC es: " + eleccion(pc));
