@@ -5,15 +5,71 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Piedra, papel o Tijera</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
         <header>
             <h1>Bienvenido a piedra papel o tijera</h1>
         </header>
         <main>
-            <h2> Recuerda que gana el mejor de 3</h2>
-            <p>Recarga la pagina "F5" o desliza hacia abajo</p>
+            <h2>Recuerda que gana el mejor de 3</h2>
+            <p id="eleccion">Eleccione su jugada:</p>
+
+            <section id="opcionesDeJugada">
+                <div class="card" style="width: 18rem">
+                    <img src="./css/imagen/piedra.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Piedra</h5>
+                        <p class="card-text">
+                            <p><b>Habilidades:</b> Le gana a tijera por su dureza, no permite que cierre la tijera</p>
+                            <p><b>Debilidades:</b> Pierde ante el papel, ya que el papel se envuelve hasta asfixiarse y morir</p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Elige Piedra</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                    <img src="./css/imagen/papel.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Papel</h5>
+                        <p class="card-text">
+                            <p><b>Habilidades:</b>El papel envuelve a la piedra hasta asfixiarse y morir, asi de poderoso es</p>
+                            <p><b>Debilidades:</b> Es muy fino y la tijera lo podia cortar y desintegrarlo en mi pedasos</p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Elige Papel</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                    <img src="./css/imagen/tijera.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Tijera</h5>
+                        <p class="card-text">
+                            <p><b>Habilidades:</b> Pude cortar la existencia de cualquier papel hasta desintegrarlo</p>
+                            <p><b>Debilidades:</b>La piedra gana a tijera por su dureza, no permite que cierre la tijera</p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Elige Tijera</a>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>
+                    Hecho por
+                    <a href="https://github.com/Christopheer12?tab=repositories"
+                        >Christopheer12</a
+                    >
+                </p>
+            </footer>
         </main>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
         <script src="./controller/index.js"></script>
     </body>
 </html>
