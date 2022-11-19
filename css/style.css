@@ -17,7 +17,20 @@ h2{
     text-align: center;
     justify-content: center;
 }
-
+.card{
+    width: 18rem;
+    margin: 1rem;
+}
+#contadorDeVictorias{
+    text-align: center;
+}
+#puntaje{
+    display: flex;
+    justify-content: center;    
+}
+.contador{
+    margin: 0 10px;
+}
 footer{
     text-align: center;
 }
