@@ -21,6 +21,11 @@ h2{
     width: 18rem;
     margin: 1rem;
 }
+#seleccion{
+    text-align: center;
+    display: center;
+}
+
 #contadorDeVictorias{
     text-align: center;
 }
